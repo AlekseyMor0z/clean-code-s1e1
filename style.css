@@ -5,40 +5,40 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.about {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.about__logo {
   width: 100%;
 }
 
-.aaa .more_inf {
+.about .about__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa { 
+  .about { 
     text-align: center;
   }
 }
 
-.centered-main-page-element {
+.container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.add-item__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-item-wrapper {
   display: flex;
 }
 
@@ -48,7 +48,8 @@ ul {
 }
 
 li,
-h3 {
+.add-item__title,
+.container__title {
   list-style: none;
 }
 
@@ -72,8 +73,8 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.add-item__title,
+.container__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -101,7 +102,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.add-item__title {
   display: block;
   margin: 0 0 20px;
 }
